@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+
+# working files that don't belong in the repo
+*.zip
+_scratch/

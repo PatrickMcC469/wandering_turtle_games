@@ -53,15 +53,20 @@ A coin purse for tabletop RPGs. Track copper, silver, gold, and platinum across 
 
 ### Tactical Tides
 
-`[one sentence from Patrick — e.g. "A turn-based tactics game where the sea is the board."]`
+Battleship, reimagined. Your ships can move — so hunt your friends across the open sea, dodge their fire, and use each ship's own way of fighting to trap them.
 
 *In development.*
 
-### `[Bug game — working title]`
+### Bug Game *(working title)*
 
-`[one sentence from Patrick]`
+One friend is the exterminator. Everyone else is a bug, scrambling to grab food scraps around the house before they get squashed. Ridiculous weapons, a lot of yelling.
 
 *In development. Title still being decided.*
+
+> Patrick's own descriptions (2026-09-21) are longer and warmer — kept here for reference so the card copy can be re-cut later:
+> - *Tactical Tides:* "a reimagining of the classic game of Battleship — battle your friends on the open sea with strategy and cunning, move your ships from danger, and use each ship's unique fighting style to hunt and trap your friends' ships."
+> - *Bug game:* "one friend plays as an exterminator hunting his bug friends, who are trying to secure their food scraps around the home. Filled with hilarious weapons — a game of laughs and great memories with your friends."
+> Both are play-with-friends games. That's a thread worth keeping visible on the cards.
 
 ---
 

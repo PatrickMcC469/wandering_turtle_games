@@ -32,6 +32,8 @@ Community work: the [Owyhee Outlaws](https://github.com/PatrickMcC469/owyhee-out
 - [`docs/decisions.md`](docs/decisions.md) — log of decisions made and why
 - [`docs/design-brief.md`](docs/design-brief.md) — aesthetic direction, constraints, what to avoid
 - [`docs/content.md`](docs/content.md) — every word on the page, approved plain before styling
+- [`docs/contrast.py`](docs/contrast.py) — WCAG contrast checker for the palette; re-run when a color changes
+- [`docs/font-samples.html`](docs/font-samples.html) — five font pairings rendered on the real palette (loads Google Fonts for comparison only)
 - `docs/launch.md` — *(later)* GitHub Pages + Squarespace DNS steps, and what to leave alone
 
 ## Running locally

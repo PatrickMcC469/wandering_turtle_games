@@ -31,7 +31,7 @@ Community work: the [Owyhee Outlaws](https://github.com/PatrickMcC469/owyhee-out
 
 - [`docs/decisions.md`](docs/decisions.md) — log of decisions made and why
 - [`docs/design-brief.md`](docs/design-brief.md) — aesthetic direction, constraints, what to avoid
-- `docs/content.md` — *(next)* the page's words, approved before they're styled
+- [`docs/content.md`](docs/content.md) — every word on the page, approved plain before styling
 - `docs/launch.md` — *(later)* GitHub Pages + Squarespace DNS steps, and what to leave alone
 
 ## Running locally

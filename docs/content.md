@@ -21,9 +21,8 @@ Rules I wrote to: short sentences, no marketing voice, say what a thing is. The 
 
 Small games, made with care, in Boise, Idaho.
 
-We make games you can play in a spare ten minutes — and we think you should go outside afterward.
-
-> **Alt:** one line, not three. Option B: "Small games from a small studio in Boise, Idaho." Option C: "Unhurried games, made in Idaho." Pick one; the second paragraph can go if it feels like too much.
+> One line only. The hero says what we make; it doesn't tell anyone what to do. (Earlier draft had a "go outside afterward" line — cut 2026-09-21, Patrick: show the games, let the community work speak for itself.)
+> Alt options: "Small games from a small studio in Boise, Idaho." / "Unhurried games, made in Idaho." 
 
 ---
 
@@ -68,16 +67,17 @@ A coin purse for tabletop RPGs. Track copper, silver, gold, and platinum across 
 
 ## 3. Community
 
-## Off the screen
+## Beyond the games
 
-We think kids should play outside at least as much as they play our games. So when a youth soccer league near us needed a website, we built it.
+We also build for local organizations that get kids out and playing.
 
-`[Owyhee Outlaws — hidden until ~Dec 1]` The Owyhee Outlaws Soccer Club in Homedale, Idaho: registration, schedules, and team pages, in English and Spanish.
+`[Owyhee Outlaws — hidden until ~Dec 1]` **Owyhee Outlaws Soccer Club** — Homedale, Idaho. A youth soccer league's website: registration, schedules, and team pages, in English and Spanish.
 → Visit the site → *(link added at launch)*
 
 If your community group needs something built, we're happy to talk.
 
-> Note: "we're happy to talk" is the only invitation on the page and it points at the footer email. It's soft on purpose — you're not hiring, not advertising services, just leaving a door open for the next soccer league.
+> The section shows the work and names the kind of organization; it never says "go outside." The reader connects the dots. "Beyond the games" replaces "Off the screen" (which was the value stated as a pun). Alternatives: "Community work" / "Around Idaho".
+> "We're happy to talk" is the only invitation on the page and points at the footer email. Soft on purpose — not hiring, not advertising, just a door left open for the next soccer league.
 
 ---
 

@@ -2,7 +2,7 @@
 
 The studio's own site at **wanderingturtlegames.com**. A single-page hub where people can discover the games, click through to download or support them, and see the community work the studio does.
 
-**Status:** Discovery done 2026-09-21. Skeleton and docs in place. Next: content draft → palette and font picks → build.
+**Status:** Discovery done 2026-09-21. Repo pushed to https://github.com/PatrickMcC469/wandering_turtle_games. Next: content draft → palette and font picks → build.
 
 ## Project brief
 

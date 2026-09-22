@@ -1,0 +1,305 @@
+/* ============================================================
+   Wandering Turtle Games — wanderingturtlegames.com
+
+   Plain CSS, no build step. Mobile first: everything below is the
+   phone layout, and the two media queries at the bottom widen it.
+
+   Colours were sampled from the logo and every text/background pair
+   was measured with docs/contrast.py. See docs/decisions.md.
+   ============================================================ */
+
+/* ---------- Fonts (self-hosted; nothing is fetched from Google) ---------- */
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url("../fonts/baloo2-latin.woff2") format("woff2");
+  font-weight: 400 800;     /* variable: one file covers every weight */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../fonts/sourcesans3-latin.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../fonts/sourcesans3-latin-italic.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------- Tokens ---------- */
+
+:root {
+  --navy:       #0a1e27;   /* page ground — the logo's outer circle */
+  --navy-teal:  #12343e;   /* card surfaces — the logo's inner circle */
+  --mint:       #559d7d;   /* the logo's ring. Decoration only: 4.1:1 on a card */
+  --mint-light: #8fd1b0;   /* headings and links — 9.7:1 on navy */
+  --cream:      #e9efe9;   /* body text — 14.6:1 on navy */
+  --cream-dim:  #b7c4bd;   /* secondary text — 9.5:1 on navy */
+  --tan:        #c9b58a;   /* warm accent — 8.5:1 on navy */
+
+  --gutter: 20px;
+  --radius: 14px;
+  --measure: 34rem;        /* keeps paragraphs readable on wide screens */
+}
+
+/* ---------- Base ---------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background-color: var(--navy);
+  color: var(--cream);
+  font-family: "Source Sans 3", Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Paper grain. An SVG turbulence filter costs ~200 bytes and tiles
+   forever — an image texture would cost 50-100 KB for the same effect. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.32;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+}
+
+img, video { max-width: 100%; height: auto; display: block; }
+
+h1, h2, h3 {
+  font-family: "Baloo 2", Verdana, sans-serif;
+  font-weight: 700;
+  line-height: 1.12;
+  margin: 0;
+}
+
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--mint-light); }
+a:hover, a:focus-visible { color: var(--tan); }
+
+:focus-visible {
+  outline: 3px solid var(--tan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+main {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  text-align: center;
+  padding: 52px 0 44px;
+}
+
+.hero__logo {
+  width: 148px;
+  height: auto;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 9vw, 3.4rem);
+  color: var(--mint-light);
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+  text-wrap: balance;
+}
+
+.hero__line {
+  color: var(--cream-dim);
+  font-size: 1.125rem;
+  max-width: 24rem;
+  margin: 0 auto;
+  text-wrap: balance;
+}
+
+/* ---------- Sections ---------- */
+
+.section { padding: 26px 0 14px; }
+
+.section__title {
+  font-family: "Source Sans 3", Georgia, serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--tan);
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(85, 157, 125, 0.28);
+}
+
+.lede {
+  max-width: var(--measure);
+  color: var(--cream-dim);
+  margin-bottom: 20px;
+}
+.lede--quiet {
+  font-size: 1rem;
+  margin-top: 22px;
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+  background: var(--navy-teal);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 22px;
+  box-shadow: 0 1px 0 rgba(143, 209, 176, 0.10) inset,
+              0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+.card__body { padding: 22px 20px 24px; }
+
+.card h3 {
+  font-size: 1.5rem;
+  color: var(--mint-light);
+  margin-bottom: 10px;
+  text-wrap: balance;
+}
+
+.card__meta {
+  color: var(--cream-dim);
+  font-size: 0.9375rem;
+  font-style: italic;
+}
+
+.card__video {
+  width: 100%;
+  max-width: 340px;          /* it's a 9:16 phone video — don't let it tower */
+  margin: 18px auto 0;
+  border-radius: 10px;
+  background: #000;
+}
+
+/* Games in progress: flatter, outlined, no link. Visibly a different
+   kind of card so nobody goes looking for a download button. */
+.card--wip {
+  background: transparent;
+  border: 1px dashed rgba(181, 153, 114, 0.42);
+  box-shadow: none;
+}
+.card--wip h3 { color: var(--tan); }
+
+.wip-note {
+  font-family: "Source Sans 3", Georgia, serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--cream-dim);
+  white-space: nowrap;
+}
+
+.card--community { background: var(--navy-teal); }
+
+/* ---------- Buttons ---------- */
+
+.card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--mint-light);
+  color: var(--navy);          /* 9.7:1 */
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  min-height: 44px;            /* comfortable tap target */
+  line-height: 1.25;
+}
+.btn:hover, .btn:focus-visible {
+  background: var(--tan);
+  color: var(--navy);          /* 8.5:1 */
+}
+
+/* An element with `hidden` must stay hidden even though .card__links is
+   a flex container — flex display would otherwise override it. */
+[hidden] { display: none !important; }
+
+/* ---------- Footer ---------- */
+
+.footer {
+  max-width: 62rem;
+  margin: 46px auto 0;
+  padding: 26px var(--gutter) 50px;
+  border-top: 1px solid rgba(85, 157, 125, 0.22);
+  color: var(--cream-dim);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+.footer p { margin-bottom: 6px; }
+.footer__fine { color: var(--cream-dim); margin-top: 14px; }
+
+/* ============================================================
+   Wider screens
+   ============================================================ */
+
+@media (min-width: 40em) {
+  :root { --gutter: 32px; }
+
+  .hero { padding: 76px 0 58px; }
+  .hero__logo { width: 190px; }
+
+  .section { padding: 38px 0 18px; }
+
+  /* The DinoLife card puts the trailer beside the text instead of above it. */
+  .card--video {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4px;
+    align-items: center;
+  }
+  .card__video { margin: 20px; max-width: 260px; }
+
+  .workshop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+  }
+  .workshop .card { margin-bottom: 0; }
+
+  .card h3 { font-size: 1.625rem; }
+}
+
+@media (min-width: 62em) {
+  .hero h1 { font-size: 3.6rem; }
+  .card__body { padding: 30px 28px; }
+}
+
+/* ============================================================
+   Preferences
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

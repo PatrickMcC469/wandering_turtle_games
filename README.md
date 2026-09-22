@@ -2,7 +2,7 @@
 
 The studio's own site at **wanderingturtlegames.com**. A single-page hub where people can discover the games, click through to download or support them, and see the community work the studio does.
 
-**Status:** Discovery done 2026-09-21. Repo pushed to https://github.com/PatrickMcC469/wandering_turtle_games. Next: content draft → palette and font picks → build.
+**Status:** Page built 2026-09-22 — hero, games (with the DinoLife trailer), community, footer. Mobile first, zero JS, 138 KB first load, all contrast measured. Next: enable GitHub Pages, point Squarespace DNS, launch.
 
 ## Project brief
 
@@ -54,8 +54,8 @@ Push to `main`. The GitHub Actions workflow in `.github/workflows/pages.yml` upl
 
 1. **Discovery** — what it's for, who it's for, what exists to show ✅ 2026-09-21
 2. **Skeleton** — repo, docs, deploy workflow ✅ 2026-09-21
-3. **Content** — write the words, approve them plain
-4. **Design** — palette from the logo, fonts, texture; contrast measured, not eyeballed
-5. **Build** — mobile viewport first
-6. **Launch** — Pages, DNS, HTTPS
+3. **Content** — write the words, approve them plain ✅ 2026-09-21
+4. **Design** — palette from the logo, fonts, texture; contrast measured, not eyeballed ✅ 2026-09-21
+5. **Build** — mobile viewport first ✅ 2026-09-22
+6. **Launch** — Pages, DNS, HTTPS *(next)*
 7. **Dec 1** — unhide the Owyhee Outlaws link

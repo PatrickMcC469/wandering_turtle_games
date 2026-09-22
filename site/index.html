@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wandering Turtle Games — small games made in Idaho</title>
+<meta name="description" content="An indie game studio in Boise, Idaho. DinoLife, Adventurers Vault, and what's coming next.">
+<link rel="icon" href="assets/logo-400.webp" type="image/webp">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Open Graph: what shows up when the link is pasted into a message. -->
+<meta property="og:title" content="Wandering Turtle Games">
+<meta property="og:description" content="Small games, made with care, in Boise, Idaho.">
+<meta property="og:image" content="https://wanderingturtlegames.com/assets/logo-800.png">
+<meta property="og:url" content="https://wanderingturtlegames.com/">
+<meta property="og:type" content="website">
+</head>
+
+<body>
+<main>
+
+  <!-- ============================ Hero ============================ -->
+  <header class="hero">
+    <picture>
+      <source srcset="assets/logo-400.webp" type="image/webp">
+      <img src="assets/logo-400.png" alt="Wandering Turtle Games — a turtle carrying a bedroll"
+           class="hero__logo" width="400" height="400">
+    </picture>
+    <h1>Wandering Turtle&nbsp;Games</h1>
+    <p class="hero__line">Small games, made with care, in Boise, Idaho.</p>
+  </header>
+
+  <!-- ======================= What we've made ======================= -->
+  <section class="section" aria-labelledby="made">
+    <h2 id="made" class="section__title">What we&rsquo;ve made</h2>
+
+    <article class="card card--video">
+      <!-- preload="none" so the page costs 59 KB (the poster), not 1 MB.
+           The trailer only downloads if someone presses play. -->
+      <video class="card__video" controls playsinline preload="none"
+             poster="media/dinolife-poster.jpg"
+             width="540" height="960"
+             aria-label="DinoLife trailer">
+        <source src="media/dinolife-trailer.mp4" type="video/mp4">
+        Your browser can&rsquo;t play this video.
+        <a href="https://apps.apple.com/us/app/dinolife-prehistoric-survival/id6783614616">See DinoLife on the App Store</a> instead.
+      </video>
+
+      <div class="card__body">
+        <h3>DinoLife: Prehistoric Survival</h3>
+        <p>Pick a dinosaur &mdash; T&#8209;Rex, Velociraptor, Triceratops, and more &mdash; and guide it from hatchling to elder. Every season brings new challenges in a turn&#8209;based survival game you can play one turn at a time.</p>
+        <p class="card__meta">Free on the App Store. iPhone and iPad.</p>
+        <p class="card__links">
+          <a class="btn" href="https://apps.apple.com/us/app/dinolife-prehistoric-survival/id6783614616">App&nbsp;Store</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card__body">
+        <h3>Adventurers Vault</h3>
+        <p>A coin purse for tabletop RPGs. Track copper, silver, gold, and platinum across every campaign, with automatic conversion, a full transaction history, and coins that tumble when you tilt your phone.</p>
+        <p class="card__meta">Free on the App Store and Google Play. iPhone, iPad, Android, Mac, and Apple Vision.</p>
+        <p class="card__links">
+          <a class="btn" href="https://apps.apple.com/us/app/adventurers-vault/id6778613726">App&nbsp;Store</a>
+          <!-- TODO: add the Google Play link here when Patrick sends it.
+               Deliberately absent rather than a button that goes nowhere. -->
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ====================== What we're making ====================== -->
+  <section class="section" aria-labelledby="making">
+    <h2 id="making" class="section__title">What we&rsquo;re making</h2>
+
+    <div class="workshop">
+      <article class="card card--wip">
+        <div class="card__body">
+          <h3>Tactical Tides</h3>
+          <p>Battleship, reimagined. Your ships can move &mdash; so hunt your friends across the open sea, dodge their fire, and use each ship&rsquo;s own way of fighting to trap them.</p>
+          <p class="card__meta">In development.</p>
+        </div>
+      </article>
+
+      <article class="card card--wip">
+        <div class="card__body">
+          <h3>Bug Game <span class="wip-note">(working title)</span></h3>
+          <p>One friend is the exterminator. Everyone else is a bug, scrambling to grab food scraps around the house before they get squashed. Ridiculous weapons, a lot of yelling.</p>
+          <p class="card__meta">In development. Title still being decided.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======================= Beyond the games ====================== -->
+  <section class="section" aria-labelledby="beyond">
+    <h2 id="beyond" class="section__title">Beyond the games</h2>
+    <p class="lede">We also build for local organizations that get kids out and playing.</p>
+
+    <article class="card card--community">
+      <div class="card__body">
+        <h3>Owyhee Outlaws Soccer Club</h3>
+        <p>Homedale, Idaho. A youth soccer league&rsquo;s website: registration, schedules, and team pages, in English and Spanish.</p>
+        <!-- Goes live around 1 Dec 2026. Delete the `hidden` attribute then. -->
+        <p class="card__links" hidden>
+          <a class="btn" href="https://owyheeoutlaws.com">Visit the site</a>
+        </p>
+      </div>
+    </article>
+
+    <p class="lede lede--quiet">If your community group needs something built, we&rsquo;re happy to talk.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p><strong>Wandering Turtle Games</strong> &middot; Boise, Idaho</p>
+  <p><a href="mailto:tevin_mcclain@wanderingturtlegames.com">tevin_mcclain@wanderingturtlegames.com</a></p>
+  <p class="footer__fine">&copy; 2026 Wandering Turtle Games</p>
+</footer>
+
+</body>
+</html>

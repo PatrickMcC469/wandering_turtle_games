@@ -2,7 +2,7 @@
 
 The studio's own site at **wanderingturtlegames.com**. A single-page hub where people can discover the games, click through to download or support them, and see the community work the studio does.
 
-**Status:** Page built 2026-09-22 — hero, games (with the DinoLife trailer), community, footer. Mobile first, zero JS, 138 KB first load, all contrast measured. Next: enable GitHub Pages, point Squarespace DNS, launch.
+**Status:** Page built 2026-09-22 — hero, games (both released titles lead with a trailer), community, footer. Mobile first, zero JS, 170 KB first load, all contrast measured. Next: enable GitHub Pages, point Squarespace DNS, launch.
 
 ## Project brief
 
